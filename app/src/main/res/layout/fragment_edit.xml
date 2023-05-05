@@ -28,14 +28,15 @@
         android:textColorHint="@color/black"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
+
     <Button
-        android:layout_gravity="center_horizontal"
         android:id="@+id/btnEdit"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:backgroundTint="@color/bluemuda"
         android:text="Edit"
         android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:textStyle="bold"
-        android:layout_height="wrap_content"/>
+        android:textStyle="bold" />
 
 </LinearLayout>
