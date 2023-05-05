@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="note"
+            type="com.example.challengechap4.dbroom.NoteData" />
+
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="15dp"
+        android:backgroundTint="@color/bluemuda"
+        android:layout_marginTop="10dp"
+        android:padding="20dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/klik"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="@{Integer.toString(note.id)}"
+                android:id="@+id/noteId"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/noteTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{note.title}"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <TextView
+                android:text="@{note.content}"
+                android:id="@+id/noteCatat"
+                android:textColor="@color/white"
+                android:layout_below="@+id/noteTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/bluemuda"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/btnDeleteNote"
+                android:layout_width="26dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="19dp"
+                android:src="@drawable/ic_delete" />
+
+            <ImageView
+                android:id="@+id/btnEditNote"
+                android:layout_width="43dp"
+                android:layout_height="25dp"
+                android:layout_below="@+id/btnDeleteNote"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_edit" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

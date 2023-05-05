@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/white"
+  >
+
+    <EditText
+        android:id="@+id/etId"
+        android:hint="id"
+        android:focusable="false"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etJudul"
+        android:hint="Tambahkan Judul"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:id="@+id/etIsiCatatan"
+        android:hint="Catatan Anda"
+        android:maxLines="6"
+        android:textColorHint="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/btnEdit"
+        android:backgroundTint="@color/bluemuda"
+        android:text="Edit"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
